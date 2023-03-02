@@ -2,3 +2,60 @@ body {
     background-color: #192f5e;
     font-family: sans-serif;
 }
+
+.inner-container {
+    max-width: 66.25rem;
+    margin: auto;
+}
+
+section {
+    padding: 3.125rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 1.75rem;
+    color: #d5e294;
+    border-bottom: 2px solid #d5e294;
+    margin-bottom: 0.625rem;
+    padding-bottom: 0.625rem;
+}
+
+section h2 {
+    font-size: 3.125rem;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.gallery {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+span {
+    background-color: #87a6ab;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    /*position the span over top of the image and take it out of the flow of the doc */
+    position: absolute;
+    /* the top, right, bottom, & left values positions this ...*/
+    top: -20px;
+    right: -10px;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+@media screen and (min-width: 800px) {
+    .gallery{
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    
+}
